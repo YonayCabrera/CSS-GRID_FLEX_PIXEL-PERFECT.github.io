@@ -3,19 +3,26 @@
 }
 
 html {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lato";
+    color: #2c3e50;
 }
 
 h1,
-h2 {
-    font-family: 'Open Sans';
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: "Lato";
+    color: #2c3e50;
 }
 
 .block {
@@ -46,7 +53,13 @@ h2 {
     .block__nav--drop-down { display:block !important; }
     .block__nav--menu--items { display: none; }
     .block__works__images {flex-wrap: wrap;}
-  }
+    .comment {font-size: 50%;}
+    .block__info__box__link {font-size: 50%;}
+}
+
+@media (max-width: 1150px) {
+    .block__comments__info {flex-wrap: wrap;}
+}    
 
 .block__nav--drop-down {
     display: none;
@@ -158,7 +171,7 @@ h2 {
 }
 
 .block__info__box--features {
-    background-color: #2c3e50;
+    background-color: #20caa8;
 }
 
 .block__info__box--customers {
@@ -169,11 +182,264 @@ h2 {
     background-color: #1ad3af;
 }
 
-.block__info__box__link{
+.block__info__box__link {
     color: #ffffff;
     text-decoration: none;
 }
 
+.block__info__box div:hover {
+    background-color: #2c3e50;
+}
 
+.block__comments {
+    grid-column: 2/3;
+}
 
+.block__comments__head--title {
+    margin-top: 8rem;
+    text-align: center;
+}
 
+.block__comments__pagination {
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: -3rem;
+}
+
+.block__comments__pagination--btn-pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-previous,.btn-next {
+    border-left:1px solid;
+    border-top:1px solid;
+    border-bottom:1px solid;
+    padding: 3px;
+    color:#2c3e50;
+    background-color: #ffffff;
+}
+
+.btn-previous {
+    text-decoration: none;
+    margin-left: 10px;
+    border-radius: 5px 0px 0px 5px; 
+}
+
+.btn-next {
+    text-decoration: none;
+    border-radius: 0px 5px 5px 0px;
+    border-right:1px solid;
+}
+
+.block__comments__info {
+    margin-top: 5rem;
+    display:  grid;
+    grid-template-columns:  repeat(auto-ﬁll, minmax(100px, 1fr)); 
+    display: flex;
+    flex-direction: row;
+}
+
+.comment{
+    border: 1px solid #e4e7e9;
+    border-radius: 5px;
+    width : 100%;
+    height : 15rem;
+    background-color : #f9fafb;
+    margin-bottom: 2rem;
+    display:flex;
+}
+.comment__content{
+    margin: 2rem;
+}
+
+.comment__image img {
+    border-radius: 50%;
+    max-width: 14.2rem;
+    width: 7.1rem;
+    height: 7.1rem;
+    margin: 2rem;
+}  
+
+.block__icons {
+    grid-column: 2/3;
+}
+
+.block__icons__business {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(1em,1fr));
+    grid-gap: 1rem;
+}
+
+.block__icons__business > div > img {
+    max-width: 100% ;
+}
+
+.block__google--maps {
+    grid-column: 1/4;
+}
+
+#map {
+    height: 30rem;
+    max-width: 100%;
+}
+
+.block__desing {
+    grid-column: 2/3;
+    margin-top: 4.3rem;
+    
+}
+
+.block__desing__container {
+    display: grid;
+    grid-template-columns:  1fr 1fr; 
+}
+
+.block__desing-container--left--social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.block__desing-container--right--form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-form {
+    width: 90%;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-submit {
+    width: 90%;
+    height: 4rem;
+    border-radius: 3px;
+    background-color: #a1b1bc;
+    box-shadow: 1px 3px 0 0 #81919b;
+    color: #ffffff;
+}
+
+.textarea-form {
+    width: 90%;
+    height: 12.8rem;
+    margin-bottom: 1rem;
+}
+
+.block__imagesCompanies {
+    margin-top: 90px;
+    grid-column: 1/4;
+}
+
+.block__imagesCompanies__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.block__imagesCompanies__box__first {
+    background-image: url("rubitoAlone.jpg");
+}
+.block__imagesCompanies__box__second {
+    background-image: url("rubitoWithGirl.jpg");
+}
+.block__imagesCompanies__box__third {
+    background-image: url("twoBoys.jpg");
+}
+.block__imagesCompanies__box__fourth {
+    background-image: url("rubitoFlirt.jpg");
+}
+.block__imagesCompanies__box__fifth {
+    background-image: url("esaMorena.jpg");
+}
+.block__imagesCompanies__box__first,
+.block__imagesCompanies__box__second,
+.block__imagesCompanies__box__third,
+.block__imagesCompanies__box__fourth,
+.block__imagesCompanies__box__fifth {
+    opacity: 0.6;
+    background-size: cover;
+}
+
+.block__imagesCompanies__box__first:hover, 
+.block__imagesCompanies__box__second:hover,
+.block__imagesCompanies__box__third:hover,
+.block__imagesCompanies__box__fourth:hover,
+.block__imagesCompanies__box__fifth:hover {
+    opacity: 1;
+}
+
+.block__imagesCompanies__box__first:hover h2, 
+.block__imagesCompanies__box__second:hover h2,
+.block__imagesCompanies__box__third:hover h2,
+.block__imagesCompanies__box__fourth:hover h2,
+.block__imagesCompanies__box__fifth:hover h2 {
+    color : #17e2ba;
+}
+
+.block__imagesCompanies__box__first:hover .block__imagesCompanies__info, 
+.block__imagesCompanies__box__second:hover .block__imagesCompanies__info,
+.block__imagesCompanies__box__third:hover .block__imagesCompanies__info,
+.block__imagesCompanies__box__fourth:hover .block__imagesCompanies__info,
+.block__imagesCompanies__box__fifth:hover .block__imagesCompanies__info {
+    background-color: #2c3e50;
+}
+
+.block__imagesCompanies__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:8rem;
+}
+
+.block__imagesCompanies__info h2{
+    color: #ffffff;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.block__imagesCompanies__info p{
+    color: #ffffff;
+    line-height: 1.7rem;
+    font-weight: 400;
+}
+
+.block__cyclist {
+    grid-column: 1/4;
+}
+
+.block__cyclist__container {
+    background-image: url("ciclista.jpg");
+    max-width: 100%;
+    overflow: hidden;
+    height: 500px;
+}
+
+.block__cyclist__container__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block__cyclist__container__box__title {
+    margin-top: 2rem;
+    color: #ffffff;
+}
+
+.block__cyclist__container__box h2 {
+    margin-top: 10rem;
+}
+
+.block__cyclist__container__box__button {
+    margin-top: 2rem;
+    border-style: solid ;
+    border-color: #ffffff ;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.01);
+    width : 170px ;
+    height : 50px;
+    color: #ffffff;
+    font-weight: 900;
+}
