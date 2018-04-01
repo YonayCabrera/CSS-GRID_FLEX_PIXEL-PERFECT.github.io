@@ -98,7 +98,7 @@ h6 {
     grid-column: 1/4;
     width: 100%;
     height: 700px;
-    background-image: url("imageOfHead.jpg");
+    background-image: url("img/imageOfHead.jpg");
 }
 
 .block__image__box--title h2 {
@@ -518,19 +518,19 @@ h6 {
 }
 
 .block__imagesCompanies__box__first {
-    background-image: url("rubitoAlone.jpg");
+    background-image: url("img/rubitoAlone.jpg");
 }
 .block__imagesCompanies__box__second {
-    background-image: url("rubitoWithGirl.jpg");
+    background-image: url("img/rubitoWithGirl.jpg");
 }
 .block__imagesCompanies__box__third {
-    background-image: url("twoBoys.jpg");
+    background-image: url("img/twoBoys.jpg");
 }
 .block__imagesCompanies__box__fourth {
-    background-image: url("rubitoFlirt.jpg");
+    background-image: url("img/rubitoFlirt.jpg");
 }
 .block__imagesCompanies__box__fifth {
-    background-image: url("esaMorena.jpg");
+    background-image: url("img/esaMorena.jpg");
 }
 .block__imagesCompanies__box__first,
 .block__imagesCompanies__box__second,
@@ -590,7 +590,7 @@ h6 {
 }
 
 .block__cyclist__container {
-    background-image: url("ciclista.jpg");
+    background-image: url("img/ciclista.jpg");
     max-width: 100%;
     overflow: hidden;
     height: 500px;
