@@ -55,22 +55,51 @@
                 </div>
                 <select class="block__nav--drop-down">
                     <option value="" selected="selected">Select</option>
-                    <option>Item1</option>
-                    <option>Item2</option>
-                    <option>Item3</option>
-                    <option>Item4</option>
-                    <option>Item5</option>
-                    <option>Item6</option>
-                    <option>Item7</option>
-                    <option>Item8</option>
-                    <option>Item9</option>
+                    <option>HOME</option>
+                    <option>PAGE</option>
+                    <option>PORTFOLIO</option>
+                    <option>BLOG</option>
+                    <option>SHOP</option>
+                    <option>TRAVEL</option>
+                    <option>SHORTCODES</option>
+                    <option>FEATURES</option>
+                    <option>CONTACT</option>
                 </select>
             </div>
         </nav>
 
         <head>
             <section class="block__image">
-                <img src="headImage.jpg">
+                <div class="block__image__box--title">
+                    <h2>WE ARE ALWAYS WORKING HARD TO</h2>
+                    <h1>BUILD AWESOME WORK</h1>
+                </div>
+                <div>
+                    <img class="lineOfHead" src="line.jpg" alt="">
+                </div>
+                <div>
+                    <div>
+                        <div class="block__image__box--ticks">
+                            <img src="tickNegro.jpg" alt="">
+                            <p>Fully Responsive</p>
+                        </div>
+                        <div class="block__image__box--ticks">
+                            <img src="tickAzul.jpg" alt="">
+                            <p>Retina Ready</p>
+                        </div>
+                        <div class="block__image__box--ticks">
+                            <img src="tickNegro.jpg" alt="">
+                            <p>Extremely Customizable</p>
+                        </div>
+                        <div class="block__image__box--ticks">
+                            <img src="tickNegro.jpg" alt="">
+                            <p>WP 3.9+ Ready</p>
+                        </div>
+                    </div>
+                    <div class="block__image__box--button">
+                        <a href="#">BUY IT NOW</a>
+                    </div>
+                </div>
             </section>
         </head>
     </div>
@@ -81,23 +110,67 @@
             <div class="block__description__body">
                 <div class="block__description__body--left">
                     <h2>Hello!</h2>
-                    <div>
+                    <p>
                         Welcome to ThemeForest! Read our Getting Started Guide, visit the Blog for recent news and make yourself at home! You can
                         find information about ThemeForest in our Knowledgebase.
-                    </div>
+                    </p>
                     <h3>
                         WordPress Drag & Drop Page Themes
                     </h3>
-                    <div>
+                    <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet est non massa aliquet dictum eget eu sem. Cras ornare
                         quam et lorem luctus, et dapibus lectus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit. Suspendisse potenti. Mauris luctus imperdiet purus vel bibendum. Phasellus ultrices hendrerit
                         mauris nec gravida.
+                    </p>
+                    <div class="block__description__body--left--button">
+                        <a href="#" class="View">View Detail</a>
                     </div>
-                    <a href="#" class="View">View Detail</a>
                 </div>
                 <div class="block__description__body--right">
-                    <p>fuck</p>
+                    <div class="block__description__body--right--dropdown">
+                        <h2>Web Design Service</h2>
+                        <div onclick="firstToggleOfDropDown()" class="dropdown__arrow">
+                            <img src="arrowDown.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="block__description__body--right--hidden" id="first-dropdown">
+                        <div class="block__description__body--right--hidden--text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie erat at nisl volutpat
+                                pulvinar. Sed in egestas dolor. Maecenas vestibulum dignissim dictum. Donec ipsum quam, sagittis
+                                et sem vel, volutpat tempor mi. Aliquam consectetur justo dui. Sed in egestas dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block__description__body--right--dropdown">
+                        <h2>Creative Service</h2>
+                        <div onclick="secondToggleOfDropDown()" class="dropdown__arrow">
+                            <img src="arrowDown.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="block__description__body--right--hidden" id="second-dropdown">
+                        <div class="block__description__body--right--hidden--text-middle">
+                            <img src="http://cdn.thefoxwp.com/wp-content/uploads/2014/12/lemon2-100x100.png" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie erat at nisl volutpat
+                                pulvinar. Sed in egestas dolor. Maecenas vestibulum dignissim dictum. Donec ipsum quam, sagittis
+                                et sem vel, volutpat tempor mi. Aliquam consectetur justo dui. Sed in egestas dolor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block__description__body--right--dropdown">
+                        <h2>SEO Solutions Service</h2>
+                        <div onclick="thirdToggleOfDropDown()" class="dropdown__arrow">
+                            <img src="arrowDown.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="block__description__body--right--hidden" id="third-dropdown">
+                        <div class="block__description__body--right--hidden--text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie erat at nisl volutpat
+                                pulvinar. Sed in egestas dolor. Maecenas vestibulum dignissim dictum. Donec ipsum quam, sagittis
+                                et sem vel, volutpat tempor mi. Aliquam consectetur justo dui. Sed in egestas dolor.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -165,13 +238,16 @@
             <div class="block__works--why__body">
                 <div class="block__works--why__body--left">
                     <h2>Why Work With Us</h2>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada nulla sit amet sem sagittis,
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada nulla sit amet sem sagittis,
                         posuere aliquet ipsum vehicula. Suspendisse nec mollis turpis. Aenean tristique a mi ac porta. Morbi
                         adipiscing suscipit risus vel ullamcorper. Pellentesque et est ante. Vestibulum convallis, justo
                         at tristique faucibus, nunc nunc euismod magna, in ultricies felis libero vitae erat. Sed quis porta
                         felis, a convallis nulla. Curabitur auctor ligula id nunc dignissim, a porta libero cursus.
+                    </p>
+                    <div class="block__works--why__body--left--button">
+
+                        <a href="#" class="View">View Detail</a>
                     </div>
-                    <a href="#" class="View">View Detail</a>
                 </div>
                 <div class="block__works--why__body--right">
                     <img class="block__works--why__body--right--phone" src="phone.jpg" alt="">

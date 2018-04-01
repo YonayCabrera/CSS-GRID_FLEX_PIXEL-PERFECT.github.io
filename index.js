@@ -6,3 +6,14 @@ function initMap() {
     });
 }
 
+function firstToggleOfDropDown(){
+    document.getElementById("first-dropdown").classList.toggle('openDropDown');
+}
+
+function secondToggleOfDropDown(){
+    document.getElementById("second-dropdown").classList.toggle('openDropDown');
+}
+
+function thirdToggleOfDropDown(){
+    document.getElementById("third-dropdown").classList.toggle('openDropDown');
+}
